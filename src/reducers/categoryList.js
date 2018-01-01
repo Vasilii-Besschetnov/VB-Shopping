@@ -5,6 +5,8 @@ const categoryIds = (state = [], action) => {
     switch (action.type) {
         case actionNames.getCategoriesSuccess:
             return action.response.result;
+        case actionNames.deleteCategory:
+            return state.filter(id => id !== action.id);
         default:
             return state;
     }

@@ -1,8 +1,14 @@
 import React from "react";
 
-const StoreCategoryItem = ({ name }) => {
+const StoreCategoryItem = ({
+    name,
+    onDeleteClick
+}) => {
     return (
-        <div>{name}</div>
+        <div>
+            {name}
+            <button onClick={onDeleteClick}>X</button>
+        </div>
     );
 };
 

@@ -20,3 +20,8 @@ export const getNewCategoryNameChanged = name => ({
 export const getAddCategory = () => ({
     type: actions.addCategory
 });
+
+export const getDeleteCategory = (id) => ({
+    type: actions.deleteCategory,
+    id
+});

@@ -10,8 +10,12 @@ class CategoryList extends Component {
     }
     
     render() {
+        const {
+            getDeleteCategory,
+            ...rest
+        } = this.props;
         return (
-            <StoreCategoryList {...this.props} />
+            <StoreCategoryList onDeleteClick={getDeleteCategory} {...rest} />
         );
     }
 }
