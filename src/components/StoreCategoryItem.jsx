@@ -2,7 +2,7 @@ import React from "react";
 
 const StoreCategoryItem = ({ name }) => {
     return (
-        <span>{name}</span>
+        <div>{name}</div>
     );
 };
 

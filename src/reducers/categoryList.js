@@ -1,8 +1,6 @@
 import { combineReducers } from "redux";
 import actionNames from "../actions/actionList";
 
-console.log(actionNames);
-
 const categoryIds = (state = [], action) => {
     switch (action.type) {
         case actionNames.getCategoriesSuccess:

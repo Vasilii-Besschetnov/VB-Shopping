@@ -1,10 +1,14 @@
 import React from "react";
 import CategoryList from "../containers/CategoryList";
+import AddCategoryCtrl from "../containers/AddCategoryCtrl";
 
 
 const Categories = (props) => {
     return (
-        <CategoryList />
+        <div>
+            <AddCategoryCtrl />
+            <CategoryList />
+        </div>
     );
 };
 

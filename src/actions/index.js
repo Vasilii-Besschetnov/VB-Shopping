@@ -10,3 +10,13 @@ const categoriesSuccess = (categoryList) => ({
 
 export const requestCategories = () => (dispatch) => api.getCategories().then((list) =>
     dispatch(categoriesSuccess(normalize(list, schema.arrayOfCategories))));
+
+
+export const getNewCategoryNameChanged = name => ({
+    type: actions.newCategoryNameChanged,
+    name
+});
+
+export const getAddCategory = () => ({
+    type: actions.addCategory
+});
