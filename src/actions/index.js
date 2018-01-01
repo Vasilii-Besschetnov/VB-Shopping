@@ -1,11 +1,11 @@
 import { normalize } from "normalizr";
 import * as schema from "./schema";
 import * as api from "../api";
-import actions from "./actionList";
-import * as fromReducers from "../reducers";
+import actionNames from "./actionList";
+import * as selectors from "../reducers";
 
 const categoriesSuccess = (categoryList) => ({
-    type: actions.getCategoriesSuccess,
+    type: actionNames.getCategoriesSuccess,
     response: categoryList
 });
 
@@ -14,22 +14,44 @@ export const requestCategories = () => (dispatch) => api.getCategories().then((l
 
 
 export const newCategoryNameChanged = name => ({
-    type: actions.newCategoryNameChanged,
+    type: actionNames.newCategoryNameChanged,
     name
 });
 
 export const addCategory = () => (dispatch, getState) =>
-    api.addCategory(fromReducers.getCategoryName(getState())).then((cat) => {
+    api.addCategory(selectors.getCategoryName(getState())).then((cat) => {
         dispatch({
-            type: actions.addCategory,
+            type: actionNames.addCategory,
             response: normalize(cat, schema.storeCategory)
         });
     });
 
-const getDeleteCategory = (id) => ({
-    type: actions.deleteCategory,
-    id
-});
-
 export const deleteCategory = (id) => dispatch =>
-    api.deleteCategory(id).then(() => dispatch(getDeleteCategory(id)));
+    api.deleteCategory(id).then(() => dispatch({
+    type: actionNames.deleteCategory,
+    id
+}));
+
+export const startCategoryRename = (id) => (dispatch, getState) => {
+    dispatch(newCategoryNameChanged(selectors.getCategory(getState(), id).name));
+    dispatch({
+        type: actionNames.startCategoryRename,
+        id
+    });
+};
+
+export const renameCategory = (id, name) => dispatch =>
+    api.renameCategory(id, name).then((result) => {
+        if (result.errorMessage) {
+            dispatch({
+                type: actionNames.renameCategoryError,
+                message: result.errorMessage
+            });
+        }
+        else {
+            dispatch({
+                type: actionNames.renameCategory,
+                response: result.category
+            })
+        }
+    })

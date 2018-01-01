@@ -1,4 +1,5 @@
 import React from "react";
+import TextBox from "./TextBox";
 
 const AddItem = ({
     value,
@@ -8,7 +9,7 @@ const AddItem = ({
 }) => {
     return (
         <div>
-            <input value={value} onChange={onChange} />
+            <TextBox value={value} onChange={onChange} />
             <button onClick={() => {
                 onAddClick();
                 }}>{buttonText}</button>

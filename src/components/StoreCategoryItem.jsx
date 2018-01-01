@@ -1,12 +1,18 @@
 import React from "react";
 
 const StoreCategoryItem = ({
-    name,
-    onDeleteClick
+    value,
+    isEditing,
+    editor,    
+    
+    onDeleteClick,
+    onEditClick,
 }) => {
+    const content = isEditing ? editor : value;
     return (
         <div>
-            {name}
+            {content}
+            <button onClick={onEditClick}>Edit</button>
             <button onClick={onDeleteClick}>X</button>
         </div>
     );

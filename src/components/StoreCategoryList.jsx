@@ -3,14 +3,18 @@ import StoreCategoryItem from "./StoreCategoryItem";
 
 const StoreCategoryList = ({
     categoryList,
-    onDeleteClick
+    onDeleteClick,
+    onEditClick,
 }) => {
     return (
         <div>
-            {categoryList.map(c => <StoreCategoryItem
-                                       key={c.id}
-                                       onDeleteClick={() => onDeleteClick(c.id)}
-                                       {...c} />)}
+            {categoryList.map(c =>
+              <StoreCategoryItem
+                  key={c.id}
+                  value={c.name}
+                  onDeleteClick={() => onDeleteClick(c.id)}
+                  onEditClick={() => onEditClick(c.id)}>
+              </StoreCategoryItem>)}
         </div>
     );
 };

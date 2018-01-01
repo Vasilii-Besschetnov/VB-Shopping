@@ -12,10 +12,14 @@ class CategoryList extends Component {
     render() {
         const {
             deleteCategory,
+            startCategoryRename,
             ...rest
         } = this.props;
         return (
-            <StoreCategoryList onDeleteClick={deleteCategory} {...rest} />
+            <StoreCategoryList
+                onDeleteClick={deleteCategory}
+                onEditClick={startCategoryRename}
+                {...rest} />
         );
     }
 }
