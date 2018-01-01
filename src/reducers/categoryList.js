@@ -5,6 +5,8 @@ const categoryIds = (state = [], action) => {
     switch (action.type) {
         case actionNames.getCategoriesSuccess:
             return action.response.result;
+        case actionNames.addCategory:
+            return [...state, action.response.result];
         case actionNames.deleteCategory:
             return state.filter(id => id !== action.id);
         default:
@@ -13,6 +15,13 @@ const categoryIds = (state = [], action) => {
 };
 
 const categoryById = (state = {}, action) => {
+    if (action.type === actionNames.deleteCategory) {
+        const {
+            [action.id]: deletedCat,
+            ...rest
+        } = state;
+        return rest;
+    }
     if (action.response) {
         return {
                 ...state,

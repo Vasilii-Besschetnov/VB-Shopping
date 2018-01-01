@@ -2,6 +2,7 @@ import { normalize } from "normalizr";
 import * as schema from "./schema";
 import * as api from "../api";
 import actions from "./actionList";
+import * as fromReducers from "../reducers";
 
 const categoriesSuccess = (categoryList) => ({
     type: actions.getCategoriesSuccess,
@@ -12,16 +13,23 @@ export const requestCategories = () => (dispatch) => api.getCategories().then((l
     dispatch(categoriesSuccess(normalize(list, schema.arrayOfCategories))));
 
 
-export const getNewCategoryNameChanged = name => ({
+export const newCategoryNameChanged = name => ({
     type: actions.newCategoryNameChanged,
     name
 });
 
-export const getAddCategory = () => ({
-    type: actions.addCategory
-});
+export const addCategory = () => (dispatch, getState) =>
+    api.addCategory(fromReducers.getCategoryName(getState())).then((cat) => {
+        dispatch({
+            type: actions.addCategory,
+            response: normalize(cat, schema.storeCategory)
+        });
+    });
 
-export const getDeleteCategory = (id) => ({
+const getDeleteCategory = (id) => ({
     type: actions.deleteCategory,
     id
 });
+
+export const deleteCategory = (id) => dispatch =>
+    api.deleteCategory(id).then(() => dispatch(getDeleteCategory(id)));
