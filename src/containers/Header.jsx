@@ -7,11 +7,11 @@ const Header = (props) => {
         <div>            
             <NavLink to="/"
                 exact={true}
-                activeClasstyle="active">
+                activeClassName="active">
                 Home
             </NavLink>
             <NavLink to="/Categories"
-                activeClasstyle="active">
+                activeClassName="active">
                 Categories
             </NavLink>
         </div>
