@@ -7,6 +7,7 @@ const Header = (props) => {
         <div>            
             <NavLink to="/"
                 exact={true}
+                className="link"
                 activeClassName="active">
                 Home
             </NavLink>
