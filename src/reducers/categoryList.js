@@ -32,7 +32,7 @@ const categoryById = (state = {}, action) => {
     return state;
 };
 
-const editableFields = (state = {}, action) => {
+const editableField = (state = {}, action) => {
     const info = state[action.id];
     switch (action.type) {
         case actionNames.startCategoryRename:
@@ -49,13 +49,17 @@ const editableFields = (state = {}, action) => {
 export default combineReducers({
     categoryById,
     categoryIds,
-    editableFields
+    editableField
 })
 
 export const getCategory = (state, id) => state.categoryById[id];
 
+export const getCategoryIds = (state) => state.categoryIds;
+
 export const getCategories = (state) =>
     state.categoryIds.map(id => getCategory(state, id));
 
-export const getIsEditing = (state, categoryId) =>
-    fromEditor.getIsEditing(state.editableFields[categoryId]);
+export const getIsEditing = (state, categoryId) => {
+    const info = state.editableField[categoryId];
+    return !!(info && fromEditor.getIsEditing(info));
+}

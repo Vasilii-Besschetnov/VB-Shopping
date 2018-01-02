@@ -6,8 +6,7 @@ import * as fromReducers from "../reducers";
 
 let AddCategoryCtrl = (props) => {
     return (
-        <AddItem
-            buttonText="Add Category" {...props}/>
+        <AddItem buttonText="Add Category" {...props}/>
     );
 }
 AddCategoryCtrl = connect((state, ownProps) => ({

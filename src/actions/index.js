@@ -33,10 +33,10 @@ export const deleteCategory = (id) => dispatch =>
 }));
 
 export const startCategoryRename = (id) => (dispatch, getState) => {
-    dispatch(newCategoryNameChanged(selectors.getCategory(getState(), id).name));
     dispatch({
         type: actionNames.startCategoryRename,
-        id
+        id,
+        name: selectors.getCategory(getState(), id).name
     });
 };
 

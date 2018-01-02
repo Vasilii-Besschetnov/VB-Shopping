@@ -11,5 +11,6 @@ export default combineReducers({
 export const getCategoryName = (state) => fromCategoryName.getCategoryName(state.categoryName);
 
 export const getCategory = (state, id) => fromCategories.getCategory(state.categoryList, id);
+export const getCategoryIds = (state) => fromCategories.getCategoryIds(state.categoryList);
 export const getCategories = (state) => fromCategories.getCategories(state.categoryList);
 export const getIsEditing = (state, categoryId) => fromCategories.getIsEditing(state.categoryList);

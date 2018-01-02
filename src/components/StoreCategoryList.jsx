@@ -1,20 +1,15 @@
 import React from "react";
-import StoreCategoryItem from "./StoreCategoryItem";
+import Category from "../containers/Category";
 
 const StoreCategoryList = ({
-    categoryList,
-    onDeleteClick,
-    onEditClick,
+    categoryList // array of ids
 }) => {
     return (
         <div>
-            {categoryList.map(c =>
-              <StoreCategoryItem
-                  key={c.id}
-                  value={c.name}
-                  onDeleteClick={() => onDeleteClick(c.id)}
-                  onEditClick={() => onEditClick(c.id)}>
-              </StoreCategoryItem>)}
+            {categoryList.map(cId =>
+              <Category
+                  key={cId}
+                  categoryId={cId}/>)}
         </div>
     );
 };

@@ -2,7 +2,15 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import StoreCategoryList from "../components/StoreCategoryList";
 import * as selectors from "../reducers";
-import * as actions from "../actions";
+import { requestCategories } from "../actions";
+
+const mapStateToProps = (state, ownProps) => ({
+    categoryList: selectors.getCategoryIds(state)
+});
+
+const dispatchToProps = {
+    requestCategories
+};
 
 class CategoryList extends Component {
     componentDidMount() {
@@ -10,24 +18,12 @@ class CategoryList extends Component {
     }
     
     render() {
-        const {
-            deleteCategory,
-            startCategoryRename,
-            ...rest
-        } = this.props;
         return (
-            <StoreCategoryList
-                onDeleteClick={deleteCategory}
-                onEditClick={startCategoryRename}
-                {...rest} />
+            <StoreCategoryList {...this.props} />
         );
     }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-    categoryList: selectors.getCategories(state)
-});
-
-CategoryList = connect(mapStateToProps, actions )(CategoryList);
+CategoryList = connect(mapStateToProps, dispatchToProps)(CategoryList);
 
 export default CategoryList;

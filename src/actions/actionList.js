@@ -5,7 +5,8 @@ const actionNames = {
     addCategory: "CATEGORY_ADDED",
     deleteCategory: "CATEGORY_DELETED",
     
-    startCategoryRename: "CATEGORY_RENAME_STARTED",    
+    startCategoryRename: "CATEGORY_RENAME_STARTED",
+    categoryNameChanged: "CATEGORY_NAME_CHANGED",
     cancelCategoryRename: "CATEGORY_RENAME_CANCELED",
     requestRenameCategory: "CATEGORY_RENAME_REQUESTED",
     renameCategory: "CATEGORY_RENAMED",
