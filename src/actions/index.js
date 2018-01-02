@@ -16,13 +16,17 @@ export const newCategoryNameChanged = name => ({
     name
 });
 
-export const addCategory = () => (dispatch, getState) =>
-    api.addCategory(selectors.getCategoryName(getState())).then((cat) => {
+export const addCategory = () => (dispatch, getState) => {
+    const name = selectors.getCategoryName(getState());
+    
+    if (!name) return Promise.resolve();
+    return api.addCategory(name).then((cat) => {
         dispatch({
             type: actionNames.addCategory,
             response: normalize(cat, schema.storeCategory)
         });
     });
+};
 
 export const deleteCategory = (id) => dispatch =>
     api.deleteCategory(id).then(() => dispatch({
