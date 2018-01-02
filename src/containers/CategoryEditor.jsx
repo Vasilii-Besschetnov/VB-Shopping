@@ -23,7 +23,9 @@ class CategoryEditor extends React.Component {
     }
     
     componentDidMount() {
-        this._input.focus()
+        const value = this._input.value;
+        this._input.focus();
+        this._input.setSelectionRange(0, value.length)
     }
     
     render() {

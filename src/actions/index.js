@@ -48,7 +48,13 @@ export const cancelCategoryRename = () => ({
 });
 
 export const renameCategory = (id) => (dispatch, getState) => {
-    const name = selectors.getCurrentName(getState());
+    const name = selectors.getCurrentName(getState()),
+          originalName = selectors.getCategory(getState(), id).name;
+    
+    if (originalName === name) { // if name is not changed, it is does not make sense to rename a category
+        dispatch(cancelCategoryRename());
+        return Promise.resolve();
+    }
 
     dispatch({
         type: actionNames.requestRenameCategory,
