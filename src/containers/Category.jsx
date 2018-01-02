@@ -1,22 +1,29 @@
 import React from "react";
 import { connect } from "react-redux";
 import StoreCategoryItem from "../components/StoreCategoryItem";
+import CategoryEditor from "./CategoryEditor";
 import * as selectors from "../reducers";
 import { deleteCategory, startCategoryRename} from "../actions";
 
-const mapStateToProps = (state, ownProps) => ({
-    value: selectors.getCategory(state, ownProps.categoryId).name,
-    isEditing: selectors.getIsEditing(state, ownProps.categoryId),
+const mapStateToProps = (state, {categoryId}) => ({
+    value: selectors.getCategory(state, categoryId).name,
+    isEditing: selectors.getIsEditing(state, categoryId),
 });
 
-const dispatchToProps = (dispatch, ownProps) => ({
-    onDeleteClick: () => dispatch(deleteCategory(ownProps.categoryId)),
-    onEditClick: () => dispatch(startCategoryRename(ownProps.categoryId))
+const dispatchToProps = (dispatch, {categoryId}) => ({
+    onDeleteClick: () => dispatch(deleteCategory(categoryId)),
+    onEditClick: () => dispatch(startCategoryRename(categoryId))
 });
 
-let Category = (props) => {    
+let Category = (props) => {
+    const {
+        categoryId,
+        ...rest
+    } = props;
+    
+    const editor = <CategoryEditor categoryId={categoryId}/>
     return (
-        <StoreCategoryItem {...props} />
+        <StoreCategoryItem {...rest} editor={editor} />
     );
 };
 

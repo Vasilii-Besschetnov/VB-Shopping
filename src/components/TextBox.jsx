@@ -3,7 +3,7 @@ import React from "react";
 export default ({
     value,
     
-    onChange
+    onChange,
 }) => {
     return (
         

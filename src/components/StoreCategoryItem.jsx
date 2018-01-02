@@ -13,9 +13,9 @@ const StoreCategoryItem = ({
     const buttons = [];
     if (!readonly) {
         if (editor) {
-            buttons.push(<button onClick={onEditClick}>Edit</button>);
+            buttons.push(<button key="edit" onClick={onEditClick}>Edit</button>);
         }
-        buttons.push(<button onClick={onDeleteClick}>X</button>);
+        buttons.push(<button key="delete" onClick={onDeleteClick}>X</button>);
     }
     return (
         <div>
