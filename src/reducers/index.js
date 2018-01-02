@@ -14,3 +14,4 @@ export const getCategory = (state, id) => fromCategories.getCategory(state.categ
 export const getCategoryIds = (state) => fromCategories.getCategoryIds(state.categoryList);
 export const getCategories = (state) => fromCategories.getCategories(state.categoryList);
 export const getIsEditing = (state, categoryId) => fromCategories.getIsEditing(state.categoryList, categoryId);
+export const getCurrentName = state => fromCategories.getCurrentName(state.categoryList);

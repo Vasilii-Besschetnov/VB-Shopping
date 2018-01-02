@@ -6,6 +6,7 @@ const isEditing = (state = false, action) => {
         case actionNames.startCategoryRename:
             return true;
         case actionNames.cancelCategoryRename:
+        case actionNames.renameCategory:
             return false;
         default:
             return state;

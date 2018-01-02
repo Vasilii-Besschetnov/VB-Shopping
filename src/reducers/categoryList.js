@@ -61,4 +61,6 @@ export const getCategories = (state) =>
 export const getIsEditing = (state, categoryId) => {
     return state.editableCategoryId === categoryId &&
             fromEditor.getIsEditing(state.editor);
-}
+};
+
+export const getCurrentName = state => fromEditor.getCurrentName(state.editor);

@@ -12,7 +12,7 @@ const StoreCategoryItem = ({
     const content = isEditing ? editor : value;
     const buttons = [];
     if (!readonly) {
-        if (editor) {
+        if (editor && !isEditing) {
             buttons.push(<button key="edit" onClick={onEditClick}>Edit</button>);
         }
         buttons.push(<button key="delete" onClick={onDeleteClick}>X</button>);

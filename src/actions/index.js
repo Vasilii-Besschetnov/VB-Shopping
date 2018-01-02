@@ -4,13 +4,11 @@ import * as api from "../api";
 import actionNames from "./actionList";
 import * as selectors from "../reducers";
 
-const categoriesSuccess = (categoryList) => ({
-    type: actionNames.getCategoriesSuccess,
-    response: categoryList
-});
-
-export const requestCategories = () => (dispatch) => api.getCategories().then((list) =>
-    dispatch(categoriesSuccess(normalize(list, schema.arrayOfCategories))));
+export const requestCategories = () => (dispatch) => api.getCategories()
+    .then((list) => dispatch({
+        type: actionNames.getCategoriesSuccess,
+        response: normalize(list, schema.arrayOfCategories)
+    }));
 
 
 export const newCategoryNameChanged = name => ({
@@ -40,8 +38,24 @@ export const startCategoryRename = (id) => (dispatch, getState) => {
     });
 };
 
-export const renameCategory = (id, name) => dispatch =>
-    api.renameCategory(id, name).then((result) => {
+export const categoryNameChanged = name => ({
+    type: actionNames.categoryNameChanged,
+    name
+});
+
+export const cancelCategoryRename = () => ({
+    type: actionNames.cancelCategoryRename
+});
+
+export const renameCategory = (id) => (dispatch, getState) => {
+    const name = selectors.getCurrentName(getState());
+
+    dispatch({
+        type: actionNames.requestRenameCategory,
+        id,
+        name
+    });
+    return api.renameCategory(id, name).then((result) => {
         if (result.errorMessage) {
             dispatch({
                 type: actionNames.renameCategoryError,
@@ -51,7 +65,8 @@ export const renameCategory = (id, name) => dispatch =>
         else {
             dispatch({
                 type: actionNames.renameCategory,
-                response: result.category
+                response: normalize(result.category, schema.storeCategory)
             })
         }
-    })
+    });
+};

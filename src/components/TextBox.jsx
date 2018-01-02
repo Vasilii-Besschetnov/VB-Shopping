@@ -1,12 +1,12 @@
 import React from "react";
 
-export default ({
-    value,
+export default (props) => {
+    const {
+        onRef,
+        ...rest
+    } = props;
     
-    onChange,
-}) => {
-    return (
-        
-        <input value={value} onChange={onChange} />
+    return (        
+        <input ref={onRef} {...rest}/>
     );
 };

@@ -43,5 +43,5 @@ export const renameCategory = (id, name) => {
         res.category = c;
     }
     
-    return res;
+    return Promise.resolve(res);
 }
