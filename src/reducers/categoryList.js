@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import actionNames from "../actions/actionList";
+import actionNames from "../enums/actionList";
 import editor, * as fromEditor from "./editor.js";
 
 const categoryIds = (state = [], action) => {

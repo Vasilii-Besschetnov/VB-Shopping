@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import actionNames from "../actions/actionList";
+import actionNames from "../enums/actionList";
 
 const isEditing = (state = false, action) => {
     switch (action.type) {

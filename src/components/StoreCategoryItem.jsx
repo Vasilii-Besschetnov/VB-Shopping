@@ -4,22 +4,29 @@ const StoreCategoryItem = ({
     value,
     isEditing,
     readonly,
-    editor,    
+    editor,
+    isDblClickEdit,
     
     onDeleteClick,
     onEditClick,
 }) => {
     const content = isEditing ? editor : value;
     const buttons = [];
+    let isEditingAllowed = false;
     if (!readonly) {
         if (editor && !isEditing) {
-            buttons.push(<button key="edit" onClick={onEditClick}>Edit</button>);
+            isEditingAllowed = true;
+            if (!isDblClickEdit) {
+                buttons.push(<button key="edit" onClick={onEditClick}>Edit</button>);
+            }
         }
         buttons.push(<button key="delete" onClick={onDeleteClick}>X</button>);
     }
     return (
         <div>
-            {content}
+            <span onDoubleClick={isEditingAllowed && isDblClickEdit ? onEditClick : null}>
+                {content}
+            </span>
             {buttons}
         </div>
     );

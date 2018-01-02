@@ -1,4 +1,4 @@
-import actionNames from "../actions/actionList";
+import actionNames from "../enums/actionList";
 
 
 const categoryName = (state = "", action) => {

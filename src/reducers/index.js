@@ -4,7 +4,7 @@ import categoryName, * as fromCategoryName from "./addCategory";
 
 export default combineReducers({
     categoryList,
-    categoryName
+    categoryName,
 });
 
 

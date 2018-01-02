@@ -1,4 +1,5 @@
 import React from "react";
+import { isBrowser } from 'react-device-detect';
 import { connect } from "react-redux";
 import StoreCategoryItem from "../components/StoreCategoryItem";
 import CategoryEditor from "./CategoryEditor";
@@ -18,12 +19,15 @@ const dispatchToProps = (dispatch, {categoryId}) => ({
 let Category = (props) => {
     const {
         categoryId,
+        deviceMode,
         ...rest
     } = props;
     
     const editor = <CategoryEditor categoryId={categoryId}/>
     return (
-        <StoreCategoryItem {...rest} editor={editor} />
+        <StoreCategoryItem {...rest}
+            editor={editor}
+            isDblClickEdit={isBrowser}/>
     );
 };
 

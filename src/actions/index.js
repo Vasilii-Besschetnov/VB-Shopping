@@ -1,7 +1,7 @@
 import { normalize } from "normalizr";
 import * as schema from "./schema";
 import * as api from "../api";
-import actionNames from "./actionList";
+import actionNames from "../enums/actionList";
 import * as selectors from "../reducers";
 
 export const requestCategories = () => (dispatch) => api.getCategories()
