@@ -27,7 +27,7 @@ const initialName = (state = null, action) => {
 const currentName = (state = null, action) => {
      switch (action.type) {
         case actionNames.startCategoryRename:
-         case actionNames.categoryNameChanged:
+        case actionNames.categoryNameChanged:
              return action.name;
         case actionNames.cancelCategoryRename:
             return null;

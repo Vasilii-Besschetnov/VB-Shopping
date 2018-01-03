@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import AddItem from "../components/AddItem";
+import AddItem from "src/components/AddItem";
 import { newCategoryNameChanged, addCategory } from "../actions";
 import * as fromReducers from "../reducers";
 
