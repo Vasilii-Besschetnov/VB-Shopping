@@ -1,7 +1,7 @@
 import React from "react";
 import SectionItem from "./SectionItem";
 import ContentItem from "./ContentItem";
-import ContentWithIcon from "./ContentWithIcon";
+import ContentWithIcon, { iconSize } from "./ContentWithIcon";
 
 const Period = ({
     title,
@@ -11,7 +11,7 @@ const Period = ({
         title: "Job #" + s
     }));
     const titleEl = (
-        <ContentWithIcon>
+        <ContentWithIcon iconSize={iconSize.middle}>
             <span className="title">{title || "STUB SECTION TITLE"}</span>
         </ContentWithIcon>);
     return (

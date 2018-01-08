@@ -15,7 +15,7 @@ const Period = ({
 }) => {
     startDate = startDate || new Date();
     return (
-        <span>{dateToString(startDate)} - {dateToString(endDate)}</span>
+        <span className="period">{dateToString(startDate)} - {dateToString(endDate)}</span>
     );
 };
 

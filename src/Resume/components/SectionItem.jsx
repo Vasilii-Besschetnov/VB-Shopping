@@ -11,7 +11,7 @@ const SectionItem = ({
     const periodEl = (<Period {...period} />);
     
     const contentEl = (
-        <ContentWithIcon>
+        <ContentWithIcon isMultiline={true}>
             {content}
         </ContentWithIcon>
     );

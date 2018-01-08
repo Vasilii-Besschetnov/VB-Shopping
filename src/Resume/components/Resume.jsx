@@ -8,7 +8,7 @@ const Resume = ({
     sections
 }) => {
     return (
-        <div>
+        <div className="Resume">
             <Header />
             <div className="row" style={{margin: 20}}>
                 <div className="col-xs-8">

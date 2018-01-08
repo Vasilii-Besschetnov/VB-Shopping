@@ -5,11 +5,11 @@ const ContentItem = ({
     big
 }) => {
     return (        
-        <div className="row">
-            <div className="col-xs-2">
+        <div className="cnt-flex">
+            <div className="period-col">
                 {small}                
             </div>
-            <div className="col-xs-10">
+            <div className="flex-expand">
                 {big}
             </div>
         </div>

@@ -1,20 +1,36 @@
 $circleSmall: 10px;
-$circleMiddle: 36px;
-$color: black;
-$circleAreaWidth: 40px;
+$circleMiddle: 34px;
+$color: #373d48;
+$circleAreaWidth: 68px;
+$periodWidth: 100px;
 
-@mixin circleArea($size) {
-    width: $size;
-    height: $size;
+.Resume {
+    font-family: "Arial";
+    font-size: 12px;
+    color: $color;
+}
+
+.cnt-flex {
+    display: flex;    
+}
+
+.flex-expand {
+    flex: 1;
+}
+
+.period-col {    
+    width: $periodWidth;
+    text-align: right;
 }
 
 .circle-area {
     text-align: center;
-    @include circleArea($circleAreaWidth);
+    width: $circleAreaWidth;
 }
 
 @mixin circle ($size) {
-    @include circleArea($size);
+    width: $size;
+    height: $size;
     line-height: $size;
     border-radius: $size / 2;
 }
@@ -47,5 +63,6 @@ $tmp: 2 / 12;
     top: 0;
     bottom: 0;
     margin-left: 15px + ($circleAreaWidth - $width) / 2;
-    left: percentage($tmp);
+    left: $periodWidth;
+    z-index: -1;
 }
