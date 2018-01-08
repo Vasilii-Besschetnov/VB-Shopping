@@ -1,0 +1,51 @@
+$circleSmall: 10px;
+$circleMiddle: 36px;
+$color: black;
+$circleAreaWidth: 40px;
+
+@mixin circleArea($size) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+}
+
+.circle-area {
+    text-align: center;
+    @include circleArea($circleAreaWidth);
+}
+
+@mixin circle ($size) {
+    @include circleArea($size);
+    border-radius: $size / 2;
+}
+
+.circle {
+    display: inline-block;
+    background: $color;
+    @include circle($circleSmall);
+    
+    &.middle {
+        @include circle($circleMiddle);        
+    }
+}
+.sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: $color;
+}
+
+.title {
+    @extend .sub-title;
+    font-size: 16px;
+}
+$tmp: 2 / 12;
+.vert-line {
+    $width: 2px;
+    width: $width;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 15px + ($circleAreaWidth - $width) / 2;
+    left: percentage($tmp);
+}

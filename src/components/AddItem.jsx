@@ -1,5 +1,7 @@
 import React from "react";
 import TextBox from "./TextBox";
+import Button from "./Button";
+import { formInline } from "bootstrap-css-modules/css/components.css";
 
 const AddItem = ({
     value,
@@ -8,11 +10,11 @@ const AddItem = ({
     onAddClick
 }) => {
     return (
-        <div>
+        <div className={formInline}>
             <TextBox value={value} onChange={onChange} />
-            <button onClick={() => {
+            <Button onClick={() => {
                 onAddClick();
-                }}>{buttonText}</button>
+                }}>{buttonText}</Button>
         </div>
     );
 };

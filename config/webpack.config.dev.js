@@ -90,6 +90,7 @@ module.exports = {
       'react-native': 'react-native-web',
         
       'src': paths.appSrc,
+      'bootstrap': paths.appSrc + "\\External\\stylesheets\\bootstrap"
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).

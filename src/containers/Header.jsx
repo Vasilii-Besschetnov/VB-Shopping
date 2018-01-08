@@ -24,6 +24,10 @@ const Header = (props) => {
     {
         text: "Categories",
         path: "/Categories"
+    },
+    {
+        text: "Resume",
+        path: "/Resume"
     }];
     
     return (

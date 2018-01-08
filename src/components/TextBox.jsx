@@ -1,4 +1,5 @@
 import React from "react";
+import { formControl } from "bootstrap-css-modules/css/components.css";
 
 export default (props) => {
     const {
@@ -7,6 +8,6 @@ export default (props) => {
     } = props;
     
     return (        
-        <input ref={onRef} {...rest}/>
+        <input className={formControl} ref={onRef} {...rest}/>
     );
 };
