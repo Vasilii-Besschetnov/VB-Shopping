@@ -1,6 +1,7 @@
 import React from "react";
 import SectionItem from "./SectionItem";
 import ContentItem from "./ContentItem";
+import ContentWithIcon from "./ContentWithIcon";
 
 const Period = ({
     title,
@@ -9,7 +10,10 @@ const Period = ({
     items = items || Array(3).fill().map(s => ({
         title: "Job #" + s
     }));
-    const titleEl = (<span className="title">{title || "STUB SECTION TITLE"}</span>);
+    const titleEl = (
+        <ContentWithIcon>
+            <span className="title">{title || "STUB SECTION TITLE"}</span>
+        </ContentWithIcon>);
     return (
         <div>
             <ContentItem big={titleEl} />

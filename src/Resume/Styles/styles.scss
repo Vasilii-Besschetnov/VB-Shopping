@@ -6,7 +6,6 @@ $circleAreaWidth: 40px;
 @mixin circleArea($size) {
     width: $size;
     height: $size;
-    line-height: $size;
 }
 
 .circle-area {
@@ -16,6 +15,7 @@ $circleAreaWidth: 40px;
 
 @mixin circle ($size) {
     @include circleArea($size);
+    line-height: $size;
     border-radius: $size / 2;
 }
 

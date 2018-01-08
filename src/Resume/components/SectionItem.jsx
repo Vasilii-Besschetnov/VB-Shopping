@@ -1,5 +1,6 @@
 import React from "react";
 import ContentItem from "./ContentItem";
+import ContentWithIcon from "./ContentWithIcon";
 import Period from "./Period";
 
 const SectionItem = ({
@@ -8,15 +9,11 @@ const SectionItem = ({
 }) => {   
     content = content || "some exp";
     const periodEl = (<Period {...period} />);
+    
     const contentEl = (
-        <div style={{display: "flex"}}>
-            <div className="circle-area">
-                <div className="circle"></div>
-            </div>
-            <div style={{flex: 1}}>
-                {content}
-            </div>
-        </div>
+        <ContentWithIcon>
+            {content}
+        </ContentWithIcon>
     );
     return (
         <ContentItem
