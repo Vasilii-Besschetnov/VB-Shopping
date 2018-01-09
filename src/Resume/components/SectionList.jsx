@@ -5,7 +5,7 @@ const SectionList = ({
     sections
 }) => {
     return (
-        <div class="main-section">
+        <div className="main-section">
             <div className="vert-line"></div>
             {sections.map(s => <Section key={s.title} {...s} />)}
         </div>

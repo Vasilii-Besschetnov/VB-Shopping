@@ -4,13 +4,13 @@ import Person from "./Person";
 
 const Header = () => {
     return (
-        <div class="header">
-            <div class="max-width">
-                <div class="row">
-                    <div class="col-xs-8">                
+        <div className="header">
+            <div className="max-width">
+                <div className="row">
+                    <div className="col-xs-8">                
                         <Person/>
                     </div>
-                    <div class="col-xs-4">
+                    <div className="col-xs-4">
                         <PersonalInfo />
                     </div>
                 </div>

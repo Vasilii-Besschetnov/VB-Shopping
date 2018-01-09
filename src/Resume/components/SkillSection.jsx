@@ -15,9 +15,9 @@ const SkillSection = ({
         </ContentWithIcon>
         );
     return (
-        <div class="section">
+        <div className="section">
             {titleEl}
-            {skills.map(skill => <SkillItem {...skill} />)}
+            {skills.map((skill, i) => <SkillItem key={i} {...skill} />)}
         </div>
     );
 };

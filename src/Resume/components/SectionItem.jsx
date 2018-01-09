@@ -13,7 +13,7 @@ const SectionItem = ({
     const d = []; // todo check if it really needed. I need formatting
     
     if (title) {
-        d.push(<div class="sub-title">{title}</div>)
+        d.push(<div key="title" className="sub-title">{title}</div>)
     }
     
     d.push(<div key="content" dangerouslySetInnerHTML={{__html: content}}></div>);

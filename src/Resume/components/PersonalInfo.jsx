@@ -21,6 +21,14 @@ const PersonalInfo = () => {
         </div>
         <div className="row">
             <div className="col-xs-4">
+                LinkedIn:
+            </div>
+            <div className="col-xs-8">
+                <a href="https://www.linkedin.com/in/vasilii-besschetnov">www.linkedin.com/in/vasilii-besschetnov</a>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-xs-4">
                 Address:
             </div>
             <div className="col-xs-8">

@@ -8,7 +8,7 @@ const SkillList = ({
         <div>
             {sections.map(s => {
                 return (
-                    <SkillSection {...s}/>
+                    <SkillSection key={s.title} {...s}/>
                     );
             })}
             

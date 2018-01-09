@@ -3,6 +3,9 @@
   font-size: 14px;
   color: #373d48;
 }
+.resume ul {
+  padding-left: 20px;
+}
 
 .max-width {
   max-width: 1000px;

@@ -2,13 +2,13 @@ import React from "react";
 
 const Person = () => {
     return (
-        <div class="cnt-person">
-            <div class="cnt-photo">
-                <div class="person-photo">
+        <div className="cnt-person">
+            <div className="cnt-photo">
+                <div className="person-photo">
                     <img src="images\MyPhoto_small.jpg" alt="Vasilii Besschetnov" />
                 </div>
             </div>
-            <div class="cnt-name">
+            <div className="cnt-name">
                 <div className="person-name">
                     Vasilii Besschetnov
                 </div>

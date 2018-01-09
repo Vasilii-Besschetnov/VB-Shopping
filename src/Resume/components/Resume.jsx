@@ -12,7 +12,7 @@ const Resume = () => {
     return (
         <div className="resume">
             <Header />
-            <div class="max-width">
+            <div className="max-width">
                 <div className="row">
                     <div className="col-xs-8">
                         <SectionList sections={sections} />

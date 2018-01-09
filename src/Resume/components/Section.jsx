@@ -8,17 +8,14 @@ const Section = ({
     iconCls,
     items
 }) => {
-    items = items || Array(3).fill().map(s => ({
-        title: "Job #" + s
-    }));
     const titleEl = (
         <ContentWithIcon iconSize={iconSize.middle} iconCls={iconCls}>
             <span className="title">{title || "STUB SECTION TITLE"}</span>
         </ContentWithIcon>);
     return (
-        <div class="section">
+        <div className="section">
             <ContentItem big={titleEl} />
-            {items.map(item => <SectionItem key={item.title} {...item} />)}
+            {items.map((item, i) => <SectionItem key={i} {...item} />)}
         </div>
     );
 };
