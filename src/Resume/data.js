@@ -10,8 +10,7 @@ const data = {
 but have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
-I am seeking for a position that will continually <b>challenge my porblem solving, analytics and management skills</b>.
-
+I am seeking for a position that will continually <b>challenge my problem solving, analytics and management skills</b>.
 `               },
             ],
         },
@@ -44,9 +43,10 @@ I built up a <b>framework</b> for valuation module.
                     content: `
 Studiocom <br/>
 
-I designed a flexible and fault-tolerant engine for ETL packages.
-Business analysis and capturing requirements
-Developed an fault-tolerant engine 
+I developed a flexible and fault-tolerant engine for ETL packages.
+Collaborated with stakeholders to make sure that the requirements and a product satisfy business needs.
+
+
 Project architecture design
 Data model design
 Development of Windows services
