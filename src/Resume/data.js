@@ -10,6 +10,7 @@ const data = {
 but have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
+
 I am seeking for a position that will continually <b>challenge my problem solving, analytics and management skills</b>.
 `               },
             ],
@@ -28,10 +29,16 @@ I am seeking for a position that will continually <b>challenge my problem solvin
 iPreo <br/>
 
 I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up.
+
 I managed a distributed team <b>up to 30</b> developers and QA engineers.
+
 Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
+
 Supported high standards of code quality through all code base.
+
 I built up a <b>framework</b> for valuation module.
+
+I significantly increased performance and responsivness of a web application.
 
 `               },
                 {
@@ -43,22 +50,21 @@ I built up a <b>framework</b> for valuation module.
                     content: `
 Studiocom <br/>
 
-I developed a flexible and fault-tolerant engine for ETL packages.
+I developed a <b>flexible and fault-tolerant engine</b> for ETL packages.
+
 Collaborated with stakeholders to make sure that the requirements and a product satisfy business needs.
 
+Built up Windows services for monitoring and processing incoming feeds.
 
-Project architecture design
-Data model design
-Development of Windows services
-Data extraction for promo campaigns 
+Supported database schema and built reports for promo campaigns.
 
 
 `               },
                 {
                     title: "Software Engineer",
                     period: {
-                        startDate: new Date(2011, 8, 1),
-                        endDate: new Date(2011, 9, 30),
+                        startDate: new Date(2010, 5, 30),
+                        endDate: new Date(2009, 7, 30),
                     },
                     content: `
 Service Center <br/>
