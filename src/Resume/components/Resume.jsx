@@ -1,20 +1,24 @@
 import React from "react";
-import SectionList from "./SectionList";
 import Header from "./Header";
+import SectionList from "./SectionList";
+import SkillList from "./SkillList";
+import data from "../data";
 
-const Resume = ({
-    firstName,
-    lastName,
-    sections
-}) => {
+const Resume = () => {
+    const {
+        sections,
+        skills
+    } = data;
     return (
         <div className="Resume">
             <Header />
-            <div className="row" style={{margin: 20}}>
+            <div className="row">
                 <div className="col-xs-8">
                     <SectionList sections={sections} />
                 </div>
-                <div className="col-xs-4"></div>
+                <div className="col-xs-4">
+                    <SkillList sections={skills} />
+                </div>
             </div>
         </div>
     );

@@ -14,14 +14,16 @@ const iconsSizeCls = {
 
 const ContentWithIcon = ({
     iconSize,
+    iconCls,
     isMultiline,
     children
 }) => {
     const circleCls = iconsSizeCls[iconSize] || "";
+    iconCls = iconCls || "";
     return (
         <div style={{display: "flex", alignItems: isMultiline ? "baseline" : "center"}}>
             <div className="circle-area">
-                <div className={`circle ${circleCls}`}></div>
+                <div className={`circle ${circleCls} ${iconCls}`}></div>
             </div>
             <div style={{flex: 1}}>
                 {children}

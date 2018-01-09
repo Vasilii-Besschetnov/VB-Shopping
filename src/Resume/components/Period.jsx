@@ -13,9 +13,8 @@ const Period = ({
     startDate,
     endDate
 }) => {
-    startDate = startDate || new Date();
     return (
-        <span className="period">{dateToString(startDate)} - {dateToString(endDate)}</span>
+        <span className="period">{startDate ? (dateToString(startDate) + " - " +dateToString(endDate)) : null}</span>
     );
 };
 

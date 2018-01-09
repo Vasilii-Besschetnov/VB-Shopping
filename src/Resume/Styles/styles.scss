@@ -1,17 +1,45 @@
 $circleSmall: 10px;
 $circleMiddle: 34px;
 $color: #373d48;
-$circleAreaWidth: 68px;
+$color2: #ddd;
+$circleAreaWidth: 34px;
+$circleOuterMargin: 17px;
 $periodWidth: 100px;
+$sectionMargin: 20px;
+
 
 .Resume {
-    font-family: "Arial";
+    font-family: "Ebrima";
     font-size: 12px;
     color: $color;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.person-position {
+    font-size: 20px;
+}
+
+.main-section {
+    position: relative; // for vertival line
+    .circle-area {
+        margin-left: $circleOuterMargin;
+    }
+}
+
+.section {
+    margin-top: $sectionMargin;
 }
 
 .cnt-flex {
-    display: flex;    
+    display: flex;
+    margin-top: 12px;
 }
 
 .flex-expand {
@@ -20,12 +48,13 @@ $periodWidth: 100px;
 
 .period-col {    
     width: $periodWidth;
-    text-align: right;
+    text-align: left;
 }
 
 .circle-area {
     text-align: center;
     width: $circleAreaWidth;
+    margin-right: $circleOuterMargin;
 }
 
 @mixin circle ($size) {
@@ -37,10 +66,13 @@ $periodWidth: 100px;
 
 .circle {
     display: inline-block;
+    color: white;
+    font-size: 6px;
     background: $color;
     @include circle($circleSmall);
     
     &.middle {
+        font-size: 16px;
         @include circle($circleMiddle);        
     }
 }
@@ -58,11 +90,103 @@ $tmp: 2 / 12;
 .vert-line {
     $width: 2px;
     width: $width;
-    background: #ddd;
+    background: $color2;
     position: absolute;
-    top: 0;
+    top: $sectionMargin;
     bottom: 0;
-    margin-left: 15px + ($circleAreaWidth - $width) / 2;
+    margin-left: $circleOuterMargin + ($circleAreaWidth - $width) / 2;
     left: $periodWidth;
     z-index: -1;
+}
+
+.grade {
+    display: flex;
+}
+
+.mark, mark-rest {
+    height: 10px;
+}
+
+.mark {
+    background: $color;
+}
+
+.mark-rest {
+    background: $color2;
+}
+
+
+/*********************************************************************************************/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?w0j4pj');
+  src:  url('fonts/icomoon.eot?w0j4pj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?w0j4pj') format('truetype'),
+    url('fonts/icomoon.woff?w0j4pj') format('woff'),
+    url('fonts/icomoon.svg?w0j4pj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-if_Resume_Suitcase_2316261:before {
+  content: "\e900";
+}
+.icon-book:before {
+  content: "\e91f";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-spinner10:before {
+  content: "\e983";
+}
+.icon-tree:before {
+  content: "\e9bc";
+}
+.icon-flag:before {
+  content: "\e9cc";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
+.icon-html-five2:before {
+  content: "\eae5";
 }
