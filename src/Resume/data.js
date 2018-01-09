@@ -6,8 +6,10 @@ const data = {
             items: [
                 {
                     title: "",
-                    content: `IT Professional with overt <b>9 years</b> of experience. I am specializing on <b>Web Technologies</b>.
-!!!TODO!!! Have successfull capable of managing a team up to 30 members. Last 6 years is focused on web technologies.
+                    content: `IT Professional with over <b>9 years</b> of experience. I am specializing on <b>Web Technologies</b>,
+but have experience on all layers of application from database to UI.
+Experienced with all stages of the development cycle for dynamic web projects
+
 Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
 `               },
             ],
@@ -17,58 +19,69 @@ Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
             iconCls: "icon  icon-briefcase",
             items: [
                 {
-                    title: "Delivery Manager/UI Team Lead",
+                    title: "UI Team Lead/Delivery Manager",
                     period: {
-                        startDate: new Date(2011, 8, 30),
+                        startDate: new Date(2011, 8, 31),
                         endDate: new Date(2017, 9, 31),
                     },
                     content: `
 iPreo <br/>
-<ul>
-<li>I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up</li>
-<li>I managed a distributed team up to 30 developers and QA engineers</li>
-<li>Implemented rich user interfaces with diversity of tools and frameworks: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.</li>
-<li>Supported high standards of code quality through all code base.</li>
-<li>Project architecture design</li>
-<li>Data model design</li>
-<li>Build up a framework for valuation module.</li>
-</ul>
+
+I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up.
+I managed a distributed team <b>up to 30</b> developers and QA engineers.
+Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
+Supported high standards of code quality through all code base.
+Project architecture design.
+Data model design.
+I built up a <b>framework</b> for valuation module.
+
 `               },
                 {
-                    title: "Software engineer",
+                    title: "Senior Software engineer",
                     period: {
                         startDate: new Date(2010, 5, 30),
                         endDate: new Date(2011, 7, 31),
                     },
                     content: `
 Studiocom <br/>
-<ul>
-<li>Business analysis and capturing requirements</li>
-<li>I Developed an fault-tolerant engine for ETL packages</li>
-<li>Implemented rich user interfaces with diversity of tools and frameworks: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.</li>
-<li>Supported high standards of code quality through all code base.</li>
-<li>Project architecture design</li>
-<li>Data model design</li>
-<li>Build up a framework for valuation module.</li>
-</ul>
+
+Business analysis and capturing requirements
+I Developed an fault-tolerant engine for ETL packages
+Implemented rich user interfaces with diversity of tools and frameworks: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
+Supported high standards of code quality through all code base.
+Project architecture design
+Data model design
+Build up a framework for valuation module.
+
 `               },
                 {
-                    title: "Delivery Manager/UI Team Lead",
+                    title: "Software Engineer",
                     period: {
                         startDate: new Date(2011, 8, 1),
                         endDate: new Date(2011, 9, 30),
                     },
-                    content: `Developer with significant experience in front-end, capable of managing a team up to 30 members. Working in IT for 9 years. Last 6 years is focused on web technologies.
-Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
+                    content: `
+Service Center <br/>
+
+Development of rich user interface using Win Forms
+Data model design
+Data migration between service branches
+Development of data access and business logic layers
+Reports generation
+Database design
+Development of stored procedures
+
 `               },
                 {
-                    title: "Delivery Manager/UI Team Lead",
+                    title: "Software Engineer",
                     period: {
                         startDate: new Date(2011, 8, 1),
                         endDate: new Date(2011, 9, 30),
                     },
-                    content: `Developer with significant experience in front-end, capable of managing a team up to 30 members. Working in IT for 9 years. Last 6 years is focused on web technologies.
-Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
+                    content: `
+Invar <br/>
+
+Developed engine for expert system which facilitates decision making. Practical applications could include medicine, transportation, repair facility, etc. I developed an architecture and business layer of the application.
 `               },
             ],
         },
@@ -83,15 +96,14 @@ Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
                         endDate: new Date(2009, 7, 31),
                     },
                     content: `
-<ul>
-<li>
-Graduated summa cum laude
-</li>
-<li>
-Graduated a course of international communication (English)
-</li>
 
-</ul>
+
+Graduated summa cum laude.
+
+Graduated a course of international communication (English).
+
+
+
 `               },
             ]
         },
