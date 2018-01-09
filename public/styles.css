@@ -2,15 +2,17 @@
   font-family: "Ebrima";
   font-size: 14px;
   color: #373d48;
-  padding: 20px 30px;
+}
+
+.max-width {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px 40px;
 }
 
 .header {
   background: #373d48;
   color: white;
-  padding: 20px 40px;
 }
 .header a {
   color: white;
@@ -65,7 +67,7 @@
 }
 
 .cnt-flex {
-  display: flex;
+  display: table;
   margin-top: 12px;
 }
 
@@ -76,6 +78,7 @@
 .period-col {
   width: 65px;
   text-align: left;
+  display: table-cell;
 }
 
 .circle-area {
@@ -128,22 +131,32 @@
 }
 
 .grade {
-  display: flex;
+  position: relative;
+  display: block;
+  height: 10px;
 }
 
-.mark, mark-rest {
-  height: 10px;
+.mark, .mark-rest {
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 .mark {
   background: #373d48;
+  left: 0;
 }
 
 .mark-rest {
   background: #ddd;
+  right: 0;
 }
 
 /*********************************************************************************************/
+@font-face {
+  font-family: 'Ebrima';
+  src: url("fonts/ebrima.ttf?w0j4pj");
+}
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?w0j4pj");

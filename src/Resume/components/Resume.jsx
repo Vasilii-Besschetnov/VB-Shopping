@@ -10,14 +10,16 @@ const Resume = () => {
         skills
     } = data;
     return (
-        <div className="Resume">
+        <div className="resume">
             <Header />
-            <div className="row" style={{padding: "0 40px"}}>
-                <div className="col-xs-8">
-                    <SectionList sections={sections} />
-                </div>
-                <div className="col-xs-4">
-                    <SkillList sections={skills} />
+            <div class="max-width">
+                <div className="row">
+                    <div className="col-xs-8">
+                        <SectionList sections={sections} />
+                    </div>
+                    <div className="col-xs-4">
+                        <SkillList sections={skills} />
+                    </div>
                 </div>
             </div>
         </div>

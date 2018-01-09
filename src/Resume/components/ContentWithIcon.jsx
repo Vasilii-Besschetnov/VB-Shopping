@@ -21,11 +21,11 @@ const ContentWithIcon = ({
     const circleCls = iconsSizeCls[iconSize] || "";
     iconCls = iconCls || "";
     return (
-        <div style={{display: "flex", alignItems: isMultiline ? "baseline" : "center"}}>
-            <div className="circle-area">
+        <div style={{display: "table", alignItems: isMultiline ? "baseline" : "center"}}>
+            <div className="circle-area" style={{display:"table-cell"}}>
                 <div className={`circle ${circleCls} ${iconCls}`}></div>
             </div>
-            <div style={{flex: 1}}>
+            <div style={{paddingLeft: "15px"}}>
                 {children}
             </div>
         </div>

@@ -120,7 +120,7 @@ Graduated a course of international communication (English)
                     grade: 3
                 },
                 {
-                    name: "SCRUM",
+                    name: "Agile/SCRUM",
                     grade: 5,
                 },
             ]

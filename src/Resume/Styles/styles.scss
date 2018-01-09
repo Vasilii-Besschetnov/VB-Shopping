@@ -13,16 +13,18 @@ $paddings: 20px 40px;
     font-family: "Ebrima";
     font-size: 14px;
     color: $color;
-    padding: 20px 30px;
+}
+
+.max-width {    
     max-width: 1000px;
     margin: 0 auto;
+    padding: $paddings;
 }
 
 .header {
     $c: white;
     background: $color;
     color: $c;
-    padding: $paddings;
     
     a {
         color: $c;
@@ -83,7 +85,8 @@ $paddings: 20px 40px;
 }
 
 .cnt-flex {
-    display: flex;
+    //display: flex;
+    display: table; // for printing
     margin-top: 12px;
 }
 
@@ -94,6 +97,7 @@ $paddings: 20px 40px;
 .period-col {    
     width: $periodWidth;
     text-align: left;
+    display: table-cell; // for printing
 }
 
 .circle-area {
@@ -142,23 +146,34 @@ $tmp: 2 / 12;
 }
 
 .grade {
-    display: flex;
+    position: relative;
+    display: block;
+    height: 10px;
 }
 
-.mark, mark-rest {
-    height: 10px;
+.mark, .mark-rest {
+    position: absolute;
+    top: 0;
+    bottom: 0
 }
 
 .mark {
     background: $color;
+    left:0;
 }
 
 .mark-rest {
     background: $color2;
+    right: 0;
 }
 
 
 /*********************************************************************************************/
+
+@font-face {
+  font-family: 'Ebrima';
+  src: url("fonts/ebrima.ttf?w0j4pj");
+}
 
 @font-face {
   font-family: 'icomoon';

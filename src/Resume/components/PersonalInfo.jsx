@@ -2,7 +2,7 @@ import React from "react";
 
 const PersonalInfo = () => {
     return (
-    <div class="header">
+    <div>
         <div className="row">
             <div className="col-xs-4">
                 Phone:
