@@ -1,26 +1,36 @@
-.Resume {
+.resume {
   font-family: "Ebrima";
-  font-size: 12px;
+  font-size: 14px;
   color: #373d48;
   padding: 20px 30px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.header {
+  background: #373d48;
+  color: white;
+  padding: 20px 40px;
+}
+.header a {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .person-name {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .person-position {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .main-section {
   position: relative;
-}
-.main-section .circle-area {
-  margin-left: 17px;
 }
 
 .section {
@@ -37,7 +47,7 @@
 }
 
 .period-col {
-  width: 100px;
+  width: 65px;
   text-align: left;
 }
 
@@ -66,7 +76,7 @@
 }
 
 .sub-title, .title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #373d48;
 }
@@ -81,8 +91,8 @@
   position: absolute;
   top: 20px;
   bottom: 0;
-  margin-left: 33px;
-  left: 100px;
+  margin-left: 16px;
+  left: 65px;
   z-index: -1;
 }
 

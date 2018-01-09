@@ -12,7 +12,7 @@ const Resume = () => {
     return (
         <div className="Resume">
             <Header />
-            <div className="row">
+            <div className="row" style={{padding: "0 40px"}}>
                 <div className="col-xs-8">
                     <SectionList sections={sections} />
                 </div>

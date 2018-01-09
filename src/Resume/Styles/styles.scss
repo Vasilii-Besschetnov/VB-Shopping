@@ -4,33 +4,46 @@ $color: #373d48;
 $color2: #ddd;
 $circleAreaWidth: 34px;
 $circleOuterMargin: 17px;
-$periodWidth: 100px;
+$periodWidth: 65px;
 $sectionMargin: 20px;
+$paddings: 20px 40px;
 
 
-.Resume {
+.resume {
     font-family: "Ebrima";
-    font-size: 12px;
+    font-size: 14px;
     color: $color;
     padding: 20px 30px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+.header {
+    $c: white;
+    background: $color;
+    color: $c;
+    padding: $paddings;
+    
+    a {
+        color: $c;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .person-name {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .person-position {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .main-section {
     position: relative; // for vertival line
-    .circle-area {
-        margin-left: $circleOuterMargin;
-    }
 }
 
 .section {
@@ -77,7 +90,7 @@ $sectionMargin: 20px;
     }
 }
 .sub-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: $color;
 }
@@ -94,7 +107,7 @@ $tmp: 2 / 12;
     position: absolute;
     top: $sectionMargin;
     bottom: 0;
-    margin-left: $circleOuterMargin + ($circleAreaWidth - $width) / 2;
+    margin-left: ($circleAreaWidth - $width) / 2;
     left: $periodWidth;
     z-index: -1;
 }

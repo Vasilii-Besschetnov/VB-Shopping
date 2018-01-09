@@ -1,33 +1,11 @@
 import React from "react";
+import PersonalInfo from "./PersonalInfo";
 
 const Header = () => {
     return (
-        <div class="clearfix">
+        <div class="clearfix header">
             <div style={{float: "right"}}>
-                <div className="row">
-                    <div className="col-xs-4">
-                        Phone:
-                    </div>
-                    <div className="col-xs-8">
-                        
-                        
-                        asdfasdfasdfasfasdfasd
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs-4">
-                        Email:
-                    </div>
-                    <div className="col-xs-8">
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs-4">
-                        Address:
-                    </div>
-                    <div className="col-xs-8">
-                    </div>
-                </div>
+                <PersonalInfo />
             </div>
             <div className="person-name">
                 Vasilii Besschetnov
@@ -35,7 +13,6 @@ const Header = () => {
             <div className="person-position">
                 Lead Web Developer
             </div>
-            <div style={{clear: "both" }}></div>
         </div>
     );
 };
