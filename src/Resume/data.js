@@ -38,11 +38,11 @@ Supported high standards of code quality through all code base.
 
 I built up a <b>framework</b> for valuation module.
 
-I significantly increased performance and responsivness of a web application.
+I significantly increased performance and responsiveness of a web application.
 
 `               },
                 {
-                    title: "Senior Software engineer",
+                    title: "Senior Full Stack Engineer",
                     period: {
                         startDate: new Date(2010, 5, 30),
                         endDate: new Date(2011, 7, 31),
@@ -61,7 +61,7 @@ Supported database schema and built reports for promo campaigns.
 
 `               },
                 {
-                    title: "Software Engineer",
+                    title: "Full Stack Engineer",
                     period: {
                         startDate: new Date(2010, 5, 30),
                         endDate: new Date(2009, 7, 30),
@@ -69,25 +69,30 @@ Supported database schema and built reports for promo campaigns.
                     content: `
 Service Center <br/>
 
-Development of rich user interface using Win Forms
-Data model design
-Data migration between service branches
-Development of data access and business logic layers
-Reports generation
-Database design
-Development of stored procedures
+Existing application was migrated to Win Forms + MySql.
+
+WCF services were implemented, that were consumed by desktop and web applications.
+
+I  developed a rich user interface using Win Forms. 
+
+Support of different types of databases was added.
+
+I solve a problem of synchronization between service centers.
+
+Built up a reporting engine.
 
 `               },
                 {
-                    title: "Software Engineer",
+                    title: "Full Stack Engineer",
                     period: {
                         startDate: new Date(2011, 8, 1),
-                        endDate: new Date(2011, 9, 30),
+                        endDate: new Date(2008, 9, 30),
                     },
                     content: `
 Invar <br/>
 
-Developed engine for expert system which facilitates decision making. Practical applications could include medicine, transportation, repair facility, etc. I developed an architecture and business layer of the application.
+Developed engine for expert system which facilitates decision making. Practical applications could include medicine, transportation, repair facility, etc.
+An architecture and calculation engine were disigned by me.
 `               },
             ],
         },
