@@ -13,6 +13,7 @@ Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
         },
         {
             title: "Experience",
+            iconCls: "icon  icon-briefcase",
             items: [
                 {
                     title: "Delivery Manager/UI Team Lead",
