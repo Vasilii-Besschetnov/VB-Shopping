@@ -32,8 +32,6 @@ I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Soluti
 I managed a distributed team <b>up to 30</b> developers and QA engineers.
 Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
 Supported high standards of code quality through all code base.
-Project architecture design.
-Data model design.
 I built up a <b>framework</b> for valuation module.
 
 `               },
@@ -46,13 +44,14 @@ I built up a <b>framework</b> for valuation module.
                     content: `
 Studiocom <br/>
 
+I designed a flexible and fault-tolerant engine for ETL packages.
 Business analysis and capturing requirements
-I Developed an fault-tolerant engine for ETL packages
-Implemented rich user interfaces with diversity of tools and frameworks: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
-Supported high standards of code quality through all code base.
+Developed an fault-tolerant engine 
 Project architecture design
 Data model design
-Build up a framework for valuation module.
+Development of Windows services
+Data extraction for promo campaigns 
+
 
 `               },
                 {
