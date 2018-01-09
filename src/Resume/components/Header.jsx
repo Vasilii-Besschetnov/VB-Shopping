@@ -1,5 +1,6 @@
 import React from "react";
 import PersonalInfo from "./PersonalInfo";
+import Person from "./Person";
 
 const Header = () => {
     return (
@@ -7,12 +8,7 @@ const Header = () => {
             <div style={{float: "right"}}>
                 <PersonalInfo />
             </div>
-            <div className="person-name">
-                Vasilii Besschetnov
-            </div>
-            <div className="person-position">
-                Lead Web Developer
-            </div>
+            <Person/>
         </div>
     );
 };

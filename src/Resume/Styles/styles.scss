@@ -33,6 +33,26 @@ $paddings: 20px 40px;
     font-weight: bold;
 }
 
+@mixin circle ($size) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+    border-radius: $size / 2;
+}
+
+.cnt-person {
+    display: inline-table;
+}
+
+.cnt-photo, .cnt-name {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cnt-name {
+    padding-left: 30px;
+}
+
 .person-name {
     font-weight: bold;
     font-size: 35px;
@@ -40,6 +60,18 @@ $paddings: 20px 40px;
 
 .person-position {
     font-size: 25px;
+}
+
+.person-photo {
+    @include circle(100px);
+    background: white;
+    overflow: hidden;
+    
+    img {
+        height: 100%;
+        width: 100%;
+        margin-top: -2px;
+    }
 }
 
 .main-section {
@@ -68,13 +100,6 @@ $paddings: 20px 40px;
     text-align: center;
     width: $circleAreaWidth;
     margin-right: $circleOuterMargin;
-}
-
-@mixin circle ($size) {
-    width: $size;
-    height: $size;
-    line-height: $size;
-    border-radius: $size / 2;
 }
 
 .circle {
@@ -112,6 +137,10 @@ $tmp: 2 / 12;
     z-index: -1;
 }
 
+.skill {
+    margin-bottom: 10px;
+}
+
 .grade {
     display: flex;
 }
@@ -133,15 +162,11 @@ $tmp: 2 / 12;
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?w0j4pj');
-  src:  url('fonts/icomoon.eot?w0j4pj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?w0j4pj') format('truetype'),
-    url('fonts/icomoon.woff?w0j4pj') format('woff'),
-    url('fonts/icomoon.svg?w0j4pj#icomoon') format('svg');
+  src: url("fonts/icomoon.eot?w0j4pj");
+  src: url("fonts/icomoon.eot?w0j4pj#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?w0j4pj") format("truetype"), url("fonts/icomoon.woff?w0j4pj") format("woff"), url("fonts/icomoon.svg?w0j4pj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -151,55 +176,67 @@ $tmp: 2 / 12;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .icon-briefcase:before {
   content: "\e901";
 }
+
 .icon-book:before {
   content: "\e91f";
 }
+
 .icon-library:before {
   content: "\e921";
 }
+
 .icon-user-tie:before {
   content: "\e976";
 }
+
 .icon-spinner10:before {
   content: "\e983";
 }
+
 .icon-tree:before {
   content: "\e9bc";
 }
+
 .icon-flag:before {
   content: "\e9cc";
 }
+
 .icon-facebook2:before {
   content: "\ea91";
 }
+
 .icon-instagram:before {
   content: "\ea92";
 }
+
 .icon-twitter:before {
   content: "\ea96";
 }
+
 .icon-github:before {
   content: "\eab0";
 }
+
 .icon-linkedin:before {
   content: "\eac9";
 }
+
 .icon-linkedin2:before {
   content: "\eaca";
 }
+
 .icon-html-five:before {
   content: "\eae4";
 }
+
 .icon-html-five2:before {
   content: "\eae5";
 }

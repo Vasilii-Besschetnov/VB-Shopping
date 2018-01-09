@@ -11,7 +11,7 @@ const SkillItem = ({
         res.push(<Grade mark={grade} />);
     }
     return (
-        <div>{res}</div>
+        <div class="skill">{res}</div>
     );  
 };
 

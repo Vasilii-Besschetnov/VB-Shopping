@@ -20,6 +20,19 @@
   font-weight: bold;
 }
 
+.cnt-person {
+  display: inline-table;
+}
+
+.cnt-photo, .cnt-name {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cnt-name {
+  padding-left: 30px;
+}
+
 .person-name {
   font-weight: bold;
   font-size: 35px;
@@ -27,6 +40,20 @@
 
 .person-position {
   font-size: 25px;
+}
+
+.person-photo {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50px;
+  background: white;
+  overflow: hidden;
+}
+.person-photo img {
+  height: 100%;
+  width: 100%;
+  margin-top: -2px;
 }
 
 .main-section {
@@ -94,6 +121,10 @@
   margin-left: 16px;
   left: 65px;
   z-index: -1;
+}
+
+.skill {
+  margin-bottom: 10px;
 }
 
 .grade {
