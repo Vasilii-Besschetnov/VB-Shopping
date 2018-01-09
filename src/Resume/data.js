@@ -7,10 +7,11 @@ const data = {
                 {
                     title: "",
                     content: `IT Professional with over <b>9 years</b> of experience. I am specializing on <b>Web Technologies</b>,
-but have experience on all layers of application from database to UI.
-Experienced with all stages of the development cycle for dynamic web projects
+but have experience on all layers of application <b>from database to UI</b>.
 
-Also has base knowledge in such technologies like: .Net, T-SQL, WPF.
+Experienced with all stages of the development cycle for dynamic web projects.
+I am seeking for a position that will continually <b>challenge my porblem solving, analytics and management skills</b>.
+
 `               },
             ],
         },
