@@ -154,6 +154,12 @@ Graduated a course of international communication (English).
                     name: "T-SQL",
                     grade: 3
                 },
+            ]
+        },
+        {
+            title: "Soft Skills",
+            iconCls: "icon icon-user-tie",
+            skills: [
                 {
                     name: "Agile/SCRUM/Lean",
                     grade: 5,
