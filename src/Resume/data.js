@@ -32,7 +32,7 @@ iPreo <br/>
 
 I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up as a stable solution with highly optimized representation of the designer vision. The business area of the company is connected with private equity.
 
-I gathered requirements from product owners and managed a distributed team up to 30 developers and QA engineers. As a key contact person I provided transparancy regarding project expectations and progress both to team members and product owners.
+I gathered requirements from product owners and managed a distributed team up to 30 developers and QA engineers. As a key contact person I provided transparency regarding project expectations and progress both to team members and product owners.
 
 Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
 
@@ -103,7 +103,7 @@ I designed an architecture and calculation engine for the solution.
             iconCls: "icon icon-library",
             items: [
                 {
-                    title: "Master of Mechanics, N.G. Chernyshevsky Saratov State University",
+                    title: "Master of Science in Mechanical Engineering, N.G. Chernyshevsky Saratov State University",
                     period: {
                         startDate: new Date(2004, 8, 1),
                         endDate: new Date(2009, 7, 31),
