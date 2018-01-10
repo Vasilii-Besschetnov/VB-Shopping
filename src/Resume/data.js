@@ -6,7 +6,7 @@ const data = {
             items: [
                 {
                     title: "",
-                    content: `IT Professional with over <b>9 years</b> of experience. I specialize on <b>Web Technologies</b>,
+                    content: `IT Professional with over 9 years of direct experience in several enterprise solutions. Primarily I specialize on <b>Web Technologies</b>,
 and also have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
@@ -30,9 +30,9 @@ I am seeking for a position that will continually <b>challenge my problem solvin
                     content: `
 iPreo <br/>
 
-I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up.
+I gave a life to <a target="_blank" href="https://pcm.ipreo.com/Solutions/Solutions_iVAL">iVal module (https://pcm.ipreo.com/Solutions/Solutions_iVAL)</a> and grew it up as a stable solution with highly optimized representation of the designer vision. The business area of the company is connected with private equity.
 
-I managed a distributed team <b>up to 30</b> developers and QA engineers.
+I gathered requirements from product owners and managed a distributed team up to 30 developers and QA engineers. As a key contact person I provided transparancy regarding project expectations and progress both to team members and product owners.
 
 Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
 
