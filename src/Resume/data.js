@@ -6,10 +6,12 @@ const data = {
             items: [
                 {
                     title: "",
-                    content: `IT Professional with over <b>9 years</b> of experience. I am specializing on <b>Web Technologies</b>,
+                    content: `IT Professional with over <b>9 years</b> of experience. I specialize on <b>Web Technologies</b>,
 but have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
+
+I am strong <b>team player with high dedication and leadership</b>.
 
 I am seeking for a position that will continually <b>challenge my problem solving, analytics and management skills</b>.
 `               },
@@ -153,8 +155,20 @@ Graduated a course of international communication (English).
                     grade: 3
                 },
                 {
-                    name: "Agile/SCRUM",
+                    name: "Agile/SCRUM/Lean",
                     grade: 5,
+                },
+                {
+                    name: "Communication",
+                    grade: 4
+                },
+                {
+                    name: "Leadership",
+                    grade: 5
+                },
+                {
+                    name: "Team work",
+                    grade: 5
                 },
             ]
         },
