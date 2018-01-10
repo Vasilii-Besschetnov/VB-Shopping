@@ -7,7 +7,7 @@ const data = {
                 {
                     title: "",
                     content: `IT Professional with over <b>9 years</b> of experience. I specialize on <b>Web Technologies</b>,
-but have experience on all layers of application <b>from database to UI</b>.
+and also have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
 
@@ -38,7 +38,7 @@ Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: 
 
 Supported high standards of code quality through all code base.
 
-I built up a <b>framework</b> for valuation module.
+I built up a <b>framework</b> for private capital valuation module.
 
 I significantly increased performance and responsiveness of a web application.
 
@@ -75,13 +75,13 @@ Existing application was migrated to Win Forms + MySql.
 
 WCF services were implemented, that were consumed by desktop and web applications.
 
-I  developed a rich user interface using Win Forms. 
+I  developed a RUI using Win Forms. 
 
 Support of different types of databases was added.
 
-I solve a problem of synchronization between service centers.
+I solved a problem of synchronization between service centers.
 
-Built up a reporting engine.
+Built up a reporting engine that is used as a platform for high management performance dashboards.
 
 `               },
                 {
@@ -93,8 +93,8 @@ Built up a reporting engine.
                     content: `
 Invar <br/>
 
-Developed engine for expert system which facilitates decision making. Practical applications could include medicine, transportation, repair facility, etc.
-An architecture and calculation engine were disigned by me.
+Developed engine for expert system which facilitates decision making. Practical applications include medicine, transportation, repair facility, etc.
+I designed an architecture and calculation engine for the solution.
 `               },
             ],
         },
