@@ -155,6 +155,12 @@
   right: 0;
 }
 
+@media print {
+  /* All your print styles go here */
+  .print-lnk {
+    display: none !important;
+  }
+}
 /*********************************************************************************************/
 @font-face {
   font-family: 'Ebrima';

@@ -172,6 +172,12 @@ $tmp: 2 / 12;
 }
 
 
+@media print { 
+ /* All your print styles go here */
+ .print-lnk { display: none !important; } 
+}
+
+
 /*********************************************************************************************/
 
 @font-face {

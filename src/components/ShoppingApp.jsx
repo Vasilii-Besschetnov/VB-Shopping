@@ -9,16 +9,7 @@ import Resume from "src/Resume/components/Resume";
 
 const ShoppingApp = (props) => {
     return (
-        <Provider store={createStore()}>
-            <BrowserRouter>
-                <div>
-                    <Header />
-                    <Route path="/Categories" component={Categories} />
-                    <Route path="/Stores" component={Stores} />
-                    <Route path="/Resume" component={Resume} />
-                </div>
-            </BrowserRouter>
-        </Provider>
+        <Resume />
     );
 }
 
