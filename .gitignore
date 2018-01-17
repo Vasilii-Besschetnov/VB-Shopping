@@ -9,7 +9,6 @@
 # production
 /build
 
-/public
 /package-lock.json
 
 # misc
